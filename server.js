@@ -23,6 +23,6 @@ app.get('/meetup/:meetupId', function(req,res){
 	res.send(req.param("meetupId"))
 })
 
-app.listen(3000, function() {
+app.listen(9000, function() {
 	console.log("Listening")
 })
