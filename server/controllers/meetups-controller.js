@@ -15,3 +15,17 @@ module.exports.list = function(req,res){
 	})
 
 }
+
+module.exports.delete = function(req,res){
+	console.log("in delete")
+	// console.log(req)
+	// console.log(req)
+
+	// console.log("in side module exports delete",req,res)
+	console.log("reqbody",req.body)
+	// Meetup.find({},function(err,results){
+	// 	res.json(results)
+	// })
+
+}
+

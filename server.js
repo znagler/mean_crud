@@ -16,6 +16,13 @@ app.use('/js',express.static(__dirname+'/client/js'))
 app.get('/api/meetups',meetupsController.list)
 app.post('/api/meetups',meetupsController.create)
 
+app.delete('/api/meetups',meetupsController.delete)
+
+app.get('/meetup/:meetupId', function(req,res){
+	console.log(req.param)
+	res.send(req.param("meetupId"))
+})
+
 app.listen(3000, function() {
 	console.log("Listening")
 })

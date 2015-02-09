@@ -10,7 +10,10 @@
 			<h1> There are {{meetups.length}} meetups</h1>
 			<ul>
 			    <li ng-repeat="meetup in meetups">
+			    	<!-- {{meetup}} -->
 			    	{{meetup.name}}
+			    	<!-- <span>edit</span> -->
+			    	<span><form ng-submit="deleteMeetup(meetup)"><button type="submit">delete</button></form></span>
 			    </li>
 			</ul>
 			<form ng-submit="createMeetup()">
